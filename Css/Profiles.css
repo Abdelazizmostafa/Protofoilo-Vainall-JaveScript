@@ -8,17 +8,39 @@ box-sizing: border-box;
 body{
     font-family: 'Poppins', sans-serif;
 }
+.special-chef{
+background: radial-gradient(#4E3022, #161616);
+}
+.special-hair{
+background: radial-gradient(#4E4342, #161616);
+}
 .banner{
-     height: 50vh;
+     height: 70vh;
      width: 100%;
      position: relative;
+     
 }
+.banner .overlay {
+    background-color: rgb(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    }
 .banner img {
     height:100%;
     width: 100%;
     object-fit: cover;
     object-position:top;
 }
+/* .banner:hover .overlay{
+    display: block;
+    
+} */
 .author {
     position: absolute;
     top:70%;
@@ -34,4 +56,34 @@ body{
 .author h3 {
     padding: 8px 0px;
     font-size: 28px;
+}
+.story,
+.my-work {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 80px 0px;
+}
+.story-description,
+.work-description {
+  width: 50%;
+}
+.story-description h3,
+.work-description h3 {
+  font-size: 36px;
+  padding-bottom: 30px;
+}
+
+.story-description p,
+.work-description p {
+  padding: 20px 0px;
+  font-size: 20px;
+}
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+.work-gallery img {
+    width: 100%;
 }
